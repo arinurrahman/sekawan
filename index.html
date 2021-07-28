@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UTS Ya BUND</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style type="text/css">
+	/* digunakan untuk mengatur lebar worksheet web */
+		.container {
+			width: 1500px;
+			margin: auto;
+			background-color: #FAA300;
+			background-image : url (header.jpg);
+		}
+	/*digunakan untuk mengatur header web*/
+        header {
+            min-height: 50px;
+			text-align: center;
+			background-color: #FAA300;
+			color :#fff;
+        }
+	/*digunakan untuk mengatur searchbox web*/
+		form {
+			width:800px;
+			margin:10px auto;
+		}
+		.search {
+			padding:8px 20px;
+			background:white;
+			border:0px solid #dbdbdb;
+		}
+	/*digunakan untuk mengatur tombol cari pada searchbox web*/
+		.button {
+			position:relative;
+			padding:6px 15px;
+			left:-8px;
+			border:2px solid #Fff;
+			background-color:#FAA300;
+			color:#fafafa;
+		}
+	/*digunakan untuk mengatur warna tombol cari pada searchbox saat kursor diarahkan pada icon*/
+		.button:hover  {
+			background-color:#fabe44;
+			color:#fff;
+		}
+	/*digunakan untuk mengatur tombol pilihan dibawah search box*/	
+		.menu ul {
+			padding: 0;
+		}
+		.menu ul li {
+			display: inline-block;
+			position: relative;
+		}
+		.menu ul li a {
+			padding: 10px 20px;
+			text-decoration: none;
+			color :#fff;
+		}
+	/*digunakan untuk mengatur warna tomboll pilihan dibawah search box saat kursor diarahkan*/	
+		.menu ul li a:hover{
+			background-color : white;
+			color : orange;
+		}
+	/*digunakan untuk mengatur border saat kursor diarahkan ke produk*/
+		.thumbnail:hover  {
+			border:2px solid #FAA300;
+			color : #000;
+		}
+	/*digunakan untuk mengatur produk yang dijual*/
+		.thumbnail {
+			background-color: white;
+			text-decoration:none;
+			color: #000;
+			border:2px solid white;
+			text-align: left;
+			padding: 10px;
+			width: 331px;
+			margin: 10px;
+			float: left;
+			align: center;
+		}
+	/*digunakan untuk mengatur gambar produk yang dijual*/	
+		.thumbnail img {
+			width: 100%;
+		}
+	/*digunakan untuk mengatur halaman tempat thumnail ditampilakan*/
+		.content {
+			background-color: #ccc;
+			min-height: 500px;
+			overflow: auto;
+		}
+	/*digunakan untuk mengatur footer*/
+        footer {
+            background-color: #faa300;
+            min-height: 50px;
+			padding: 20px;
+			text-align: center;
+        }
+	/*digunakan untuk mengatur warna harga dalam thumnail*/
+		.price{
+			color: #FAA300;
+			font-weight: 1000;
+		}
+	/*digunakan untuk tampilan responsive*/
+@media screen and (max-width: 800px) {
+		.container {
+			width: 750px;
+		}
+    </style>
+</head>
+<body>
+	<div class="container">
+	<!-- menampilkan header-->
+	<!--header adalah tag baru html5-->
+    <header>
+        <h1>Buy Now</h1>
+		<!--menampilkan searchbox-->
+		<form>
+		<!-- input merupakan fitur baru html 5-->
+		<input class="search" type="text" placeholder="Search..." required>	
+		<input class="button" type="button" value="Search">		
+		</form>
+		<!--menampilkan menu menu-->
+		<div class="menu">
+			<ul>
+			<li><a href="index.html">All</a></li>
+			<li><a href="backpack.html">Backpack</a></li>
+			<li><a href="jacket.html">Jacket</a></li>
+			<li><a href="gloves.html">Gloves</a></li>
+			<li><a href="t-shit.html">T-Shirts</a></li>
+			<li><a href="shirt.html">Shirts</a></li>
+			<li><a href="pants.html">Pants</a></li>
+			<li><a href="shock.html">Shock</a></li>
+			<li><a href="boots.html">Boots</a></li>
+			<li><a href="tent.html">Tent</a></li>
+			<li><a href="flysheet.html">FlySheet</a></li>
+			</ul>
+    </div>
+	</header
+	<!--menampilan tempat konten thumnail ditampilkan-->
+    <div class="content">
+	<!--menampikan thumnail-->
+		<a href="produk 1.html">
+		<div class="thumbnail">
+			<!--menampilkan gambar-->
+			<img src="gambar/produk (1).jpg">
+			<h2>Consina Centurion 50</h2>
+			<div class="price">
+				<p>Rp 795.00</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 2.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (2).jpg">
+			<h2>Aerostreet 40-43 Advanture</h2>
+			<div class="price">
+				<p>Rp 99.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 3.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (3).jpg">
+			<h2>GreatOutdoor Java 4 pro</h2>
+			<div class="price">
+				<p>Rp 1.100.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 4.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (4).jpg">
+			<h2>Eiger Anaconda 2.5</h2>
+			<div class="price">
+				<p>Rp 1.100.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 5.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (5).jpg">
+			<h2>Eiger Cypress TX</h2>
+			<div class="price">
+				<p>Rp 1.200.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 6.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (6).jpg">
+			<h2>Consina Rain Wolf</h2>
+			<div class="price">
+				<p>Rp 475.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 7.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (7).jpg">
+			<h2>Consina Portage 40</h2>
+			<div class="price">
+				<p>Rp 450.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 8.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (8).jpg">
+			<h2>Consina Noth Fiekd </h2>
+			<div class="price">
+				<p>Rp 375.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 9.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (9).jpg">
+			<h2>Consina Galapagos</h2>
+			<div class="price">
+				<p>Rp 950.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 10.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (10).jpg">
+			<h2>Consina Tarebbi 60L</h2>
+			<div class="price">
+				<p>Rp 645.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 11.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (11).jpg">
+			<h2>Consina Extraterrestrial 60L</h2>
+			<div class="price">
+				<p>Rp 745.000</p>
+			</div>
+		</div>
+		</a>
+		<a href="produk 12.html">
+		<div class="thumbnail">
+			<img src="gambar/produk (12).jpg">
+			<h2>Consina Rundle</h2>
+			<div class="price">
+				<p>Rp 295.000</p>
+			</div>
+		</div>
+		</a>
+    </div>
+	<!--menampilkan footer-->
+	<!--footer adalah tag baru html5-->
+    <footer>
+        <p>Footer Uts smt 2 20/21</p>
+    </footer>
+	</div>
+</body>
+</html>
