@@ -160,7 +160,10 @@ nav ul li a:hover {
     padding: 20px;
     font-size: 16px;
 }
-
+@font-face {
+	font-family : 'jawa palsu';
+	 src: url('JAWAPALSU.TTF');
+  }
 @media screen and (max-width: 768px) {
     nav ul {
         width: 50%;
