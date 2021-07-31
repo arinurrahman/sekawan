@@ -1,146 +1,77 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-	<style>
-	/*Now the styles*/
-* {
-	margin: 0; 
-	padding: 0;
-}
-body {
-	background: #ccc; 
-	font-family: arial, verdana, tahoma;
-}
-
-/*Time to apply widths for accordian to work
-Width of image = 640px
-total images = 5
-so width of hovered image = 640px
-width of un-hovered image = 40px - you can set this to anything
-so total container width = 640 + 40*4 = 800px;
-default width = 800/5 = 160px;
-*/
-
-.accordian {
-	width: 800px; height: 320px;
-	overflow: hidden;
-	
-	/*Time for some styling*/
-	margin: 100px auto;
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-}
-
-/*A small hack to prevent flickering on some browsers*/
-.accordian ul {
-	width: 2000px;
-	/*This will give ample space to the last item to move
-	instead of falling down/flickering during hovers.*/
-}
-
-.accordian li {
-	position: relative;
-	display: block;
-	width: 160px;
-	float: left;
-	
-	border-left: 1px solid #888;
-	
-	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-	
-	/*Transitions to give animation effect*/
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	/*If you hover on the images now you should be able to 
-	see the basic accordian*/
-}
-
-/*Reduce with of un-hovered elements*/
-.accordian ul:hover li {width: 40px;}
-/*Lets apply hover effects now*/
-/*The LI hover style should override the UL hover style*/
-.accordian ul li:hover {width: 640px;}
-
-
-.accordian li img {
-	display: block;
-}
-
-/*Image title styles*/
-.image_title {
-	background: rgba(0, 0, 0, 0);
-	position: absolute;
-	left: 0; bottom: 0;	
-	width: 640px;	
-
-}
-.image_title a {
-	display: block;
-	color: transparent;
-	text-decoration: none;
-	padding: 20px;
-	font-size: 16px;
-}
-.image_title hover {
-	background: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	left: 0; bottom: 0;	
-	width: 640px;	
-}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sekawan/style.css">
 </head>
-
 <body>
-	<!-- Kita akan membuat simple accordian dengan efek hover -->
-<div class="accordian">
-	<ul>
-		<li>
-			<div class="image_title">
-				<a href="#">Slide 1</a>
-			</div>
-			<a href="#">
-				<img src="6.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Slide 2</a>
-			</div>
-			<a href="#">
-				<img src="7.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Slide 3</a>
-			</div>
-			<a href="#">
-				<img src="8.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Slide 4</a>
-			</div>
-			<a href="#">
-				<img src="9.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Slide 5</a>
-			</div>
-			<a href="#">
-				<img src="10.jpg"/>
-			</a>
-		</li>
-	</ul>
-</div>
+    
+    <nav>
+        <div class="logo">
+            <h4>Sekawan</h4>
+        </div>
+
+        <ul>
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Produk</a></li>
+            <li><a href="">Kontak</a></li>
+            <li><a href="">Search</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="accordian">
+        <ul>
+            <li>
+                <div class="image_title">
+                    <a href="#">Slide 1</a>
+                </div>
+                <a href="#">
+                    <img src="6.jpg"/>
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Slide 2</a>
+                </div>
+                <a href="#">
+                    <img src="7.jpg"/>
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Slide 3</a>
+                </div>
+                <a href="#">
+                    <img src="8.jpg"/>
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Slide 4</a>
+                </div>
+                <a href="#">
+                    <img src="9.jpg"/>
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Slide 5</a>
+                </div>
+                <a href="#">
+                    <img src="10.jpg"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
