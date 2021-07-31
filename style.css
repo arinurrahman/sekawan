@@ -18,8 +18,13 @@ nav {
     align-items: center;
 }
 
+@font-face {
+    font-family: JAWAPALSU;
+    src: url(JAWAPALSU.TTF);
+}
+
 nav .logo {
-    font-family: jawa ;
+    font-family: JAWAPALSU;
     letter-spacing: 3px;
 }
 
@@ -160,10 +165,8 @@ nav ul li a:hover {
     padding: 20px;
     font-size: 16px;
 }
-@font-face{
-font-family : jawa;
-src : url(JAWAPALSU.TTF);
-}
+
+
 @media screen and (max-width: 768px) {
     nav ul {
         width: 50%;
