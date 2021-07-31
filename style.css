@@ -10,16 +10,16 @@ body {
 
 nav {
     display: flex;
-    background-color: rgb(139, 72, 72);
+    background-color: #211f20;
     justify-content: space-around;
     /* padding: 20px 0; */
-    color: aliceblue;
+    color: #c7b177;
     height: 50px;
     align-items: center;
 }
 
 nav .logo {
-    font-family: jawa palsu;
+    font-family: ;
     letter-spacing: 3px;
 }
 
@@ -31,13 +31,13 @@ nav ul {
 }
 
 nav ul li a {
-    color: aliceblue;
+    color: #c7b177;
     text-decoration: none;
     font-size: 0.8em;
 }
 
 nav ul li a:hover {
-    color: antiquewhite;
+    color: #c7b177;
 }
 
 .menu-toggle {
@@ -63,9 +63,10 @@ nav ul li a:hover {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: aliceblue;
+    background-color: #c7b177;
     border-radius: 3px;
     transition: all 0.5s;
+    z-index: 2;
 }
 
 .menu-toggle span:nth-child(2) {
@@ -160,10 +161,7 @@ nav ul li a:hover {
     padding: 20px;
     font-size: 16px;
 }
-@font-face {
-	font-family : 'jawa palsu';
-	 src: url('JAWAPALSU.TTF');
-  }
+
 @media screen and (max-width: 768px) {
     nav ul {
         width: 50%;
@@ -184,8 +182,8 @@ nav ul li a:hover {
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(139, 72, 72);
-        z-index: -1;
+        background-color: #211f20;
+        z-index: 1;
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
