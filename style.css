@@ -162,7 +162,7 @@ nav ul li a:hover {
 }
 @font-face{
 font-family : 'jawa';
-src : url(https://www.dafont.com/jawa-palsu.font);
+src : url('https://www.dafont.com/jawa-palsu.font');
 }
 @media screen and (max-width: 768px) {
     nav ul {
