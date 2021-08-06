@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: #211f20;
+}
+
+nav {
+    display: flex;
+    background-color: #211f20;
+    justify-content: space-around;
+    color: #dcb13f;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: #dcb13f;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: JAWAPALSU;
+    src: url(fonts/JAWAPALSU.TTF);
+}
+
+nav .logo {
+    font-family: JAWAPALSU;
+    letter-spacing: 3px;
+}
+
+nav .logo h4 a {
+    color: #dcb13f;
+}
+
+nav .logo h4 a:hover {
+    color: #dcb13f;
+}
+
+nav ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #dcb13f;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover {
+    color: #dcb13f;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #dcb13f;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #dcb13f;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 98px;
+}
+
+.about-us {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-us p {
+    font-size: 25px;
+}
+
+.about-us-img img {
+    filter: blur(10px);
+}
+
+footer {
+    border-top: 1px solid;
+    border-color: #dcb13f;
+    min-height: 50px;
+    padding: 20px;
+    text-align: center;
+    color: #dcb13f;
+}
+
+.kontak {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kontak ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kontak ul li a {
+    color: #dcb13f;
+}
+
+.kontak ul li a:hover {
+    color: #dcb13f;
+}
+
+.kontak img {
+    max-width: 44px;
+    height: auto;
+    margin: 10px;
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigasi ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.navigasi ul li a {
+    color: #dcb13f;
+}
+
+.navigasi ul li a:hover {
+    color: #dcb13f;
+}
+
+.copyright {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #211f20;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
